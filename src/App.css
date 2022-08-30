@@ -38,9 +38,13 @@
 }
 
 .form-1 {
-  display: inline-flexbox
+  display:inline-flexbox
 }
 
 .sub-form-1 {
+  display: inline
+}
+
+.form-2 {
   display: inline-flex
 }

@@ -1,8 +1,49 @@
 import logo from './logo.svg';
 import './App.css';
-import Clothes from "./components/Clothes"; //Import component
+import ProductShow from "./components/productShow"; //Import component
+// import { render } from '@testing-library/react';
 
 function App() {
+  console.log(123);
+  var testData = [
+    {
+      name: "Quần jean",
+      type: "Skinny",
+      color: "Đen",
+      size: "L",
+      startPrice: 20000,
+      currentPrice: 22000,
+      description: 'Bao đẹp bao chất ngầu',
+      photoUrls: []
+    },
+    {
+      name: "Quần ngắn",
+      type: "Đùi bò",
+      color: "Đỏ",
+      size: "XL",
+      startPrice: 25000,
+      currentPrice: 2800,
+      photoUrls: []
+    },
+    {
+      name: "Quần jean",
+      type: "Skinny",
+      color: "Đen",
+      size: "L",
+      startPrice: 30000,
+      currentPrice: 33000,
+      photoUrls: []
+    },
+    {
+      name: "Quần ngắn",
+      type: "Đùi bò",
+      color: "Đỏ",
+      size: "XL",
+      startPrice: 20800,
+      currentPrice: 21000,
+      photoUrls: []
+    }
+  ]
   return (
     <div className="App">
       <header className="App-header">
@@ -19,13 +60,20 @@ function App() {
           Learn React
         </a>
       </header>
-      <div className='form-1'>
-        <div className='sub-form-1'>
-          <Clothes name="Quần jean" type="Skinny" color ="Đen" size = "L">Clothes 1</Clothes>
-          <Clothes name="Váy" type="váy công chúa" color ="Trắng" size = "M">Clothes 2</Clothes>
-          <Clothes name="Quần jean" type="Skinny" color ="Đen" size = "L">Clothes 1</Clothes>
-          <Clothes name="Váy" type="váy công chúa" color ="Trắng" size = "M">Clothes 2</Clothes>
-        </div>
+      <div className=''>
+        {
+          testData.map((item, index) => {
+            return <ProductShow 
+                    name={item.name}
+                    type={item.type} 
+                    color={item.color} 
+                    size={item.size} 
+                    startPrice={item.startPrice}
+                    currentPrice={item.currentPrice}
+                    description={item.description}> {item.name}
+                    </ProductShow>
+          })
+        }
       </div>
     </div>
   );

@@ -1,0 +1,23 @@
+.btn-form-1 {
+    color: rgb(14, 14, 186);
+    display: inline-flex
+
+}
+
+.value-show-1 {
+    color: rgb(19, 123, 167);
+    font-family: Cursive;
+    font-size: calc(6px + 2vmin);
+}
+
+.btn-1 {
+    height: 30px;
+    width: 30px;
+    border-radius: 80%;
+    border: 2px solid rgb(63, 165, 165);
+  }
+
+.a-1 {
+    font-size: calc(6px + 2vmin);
+    color: rgb(29, 156, 156);
+}
