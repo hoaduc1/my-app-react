@@ -1,6 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import ProductShow from "./components/productShow"; //Import component
+import image1 from './components/images/1.jpg';
+import image2 from './components/images/2.png';
+import image3 from './components/images/3.png';
+import image4 from './components/images/4.png';
+import image5 from './components/images/5.jpg';
+import image6 from './components/images/6.png';
 // import { render } from '@testing-library/react';
 
 function App() {
@@ -11,37 +17,55 @@ function App() {
       type: "Skinny",
       color: "Đen",
       size: "L",
+      image: [
+        {
+        original: image3,
+        }, 
+        {
+        original: image4,
+        }, 
+        {
+        original: image5,
+        }
+      ],
       startPrice: 20000,
       currentPrice: 22000,
       description: 'Bao đẹp bao chất ngầu',
-      photoUrls: []
+      photoUrls: [],
+      createdUserName: 'Nguyễn Văn A'
     },
     {
       name: "Quần ngắn",
       type: "Đùi bò",
       color: "Đỏ",
       size: "XL",
+      image: [image2],
       startPrice: 25000,
       currentPrice: 2800,
-      photoUrls: []
+      photoUrls: [],
+      createdUserName: 'Nguyễn Văn B',
     },
     {
       name: "Quần jean",
       type: "Skinny",
       color: "Đen",
       size: "L",
+      image: [image3],
       startPrice: 30000,
       currentPrice: 33000,
-      photoUrls: []
+      photoUrls: [],
+      createdUserName: 'Nguyễn Văn C'
     },
     {
       name: "Quần ngắn",
       type: "Đùi bò",
       color: "Đỏ",
       size: "XL",
+      image: [image4],
       startPrice: 20800,
       currentPrice: 21000,
-      photoUrls: []
+      photoUrls: [],
+      createdUserName: 'Nguyễn Thị D'
     }
   ]
   return (
@@ -68,9 +92,11 @@ function App() {
                     type={item.type} 
                     color={item.color} 
                     size={item.size} 
+                    image={item.image}
                     startPrice={item.startPrice}
                     currentPrice={item.currentPrice}
-                    description={item.description}> {item.name}
+                    description={item.description}
+                    createdUserName={item.createdUserName}> {item.name}
                     </ProductShow>
           })
         }

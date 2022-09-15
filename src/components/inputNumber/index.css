@@ -11,13 +11,13 @@
 }
 
 .btn-1 {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     border-radius: 80%;
     border: 2px solid rgb(63, 165, 165);
   }
 
 .a-1 {
-    font-size: calc(6px + 2vmin);
+    font-size: calc(2px + 2vmin);
     color: rgb(29, 156, 156);
 }

@@ -1,3 +1,5 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 .title-item {
     color: rgb(14, 14, 186);
 }
@@ -22,13 +24,12 @@
 }
 
 .div-1 {
-    display: flex;
+    /* display: flex; */
     /* text-align: left; */
 }
 
 .div-2 {
-    
-    
+    display: flexbox;
 }
 
 .div-3 {
@@ -38,4 +39,9 @@
 .div-4 {
     display: inline-flex;
     
+}
+
+.photo {
+    height: 500px;
+    width: 500px;
 }
