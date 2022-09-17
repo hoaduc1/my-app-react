@@ -3,7 +3,7 @@ import ReactImageGallery from 'react-image-gallery'
 import "./index.css"
 import InputNumbers from "../inputNumber";
 
-var InputNumber = InputNumbers[0]
+var InputNumber = InputNumbers[1]
 
 const productShow = (props) => {
   // console.log(props) //Giá trị của props
@@ -20,8 +20,6 @@ const productShow = (props) => {
             showNav={false}
             showBullets={true}
             showThumbnails={false}
-            originalHeight={100}
-            originalWidth={100}
             // onClick={() => history.push(`/event/detail?eid=${event?.id}`)}
           />
         }

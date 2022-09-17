@@ -23,13 +23,23 @@
   block-size: 0vh;
 }
 
+.div-0 {
+    /* height: 100%;
+    width: 100%; */
+    /* background-color: powderblue; */
+}
+
 .div-1 {
     /* display: flex; */
     /* text-align: left; */
+    
 }
 
 .div-2 {
-    display: flexbox;
+    /* display: flexbox; */
+    height: 200px;
+    width: 400px;
+    background-color: powderblue;
 }
 
 .div-3 {

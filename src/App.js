@@ -7,6 +7,7 @@ import image3 from './components/images/3.png';
 import image4 from './components/images/4.png';
 import image5 from './components/images/5.jpg';
 import image6 from './components/images/6.png';
+import image7 from './components/images/7.jpg';
 // import { render } from '@testing-library/react';
 
 function App() {
@@ -20,12 +21,18 @@ function App() {
       image: [
         {
         original: image3,
+        originalHeight: 200,
+        originalWidth: 200
         }, 
         {
         original: image4,
+        originalHeight: 200,
+        originalWidth: 200
         }, 
         {
         original: image5,
+        originalHeight: 200,
+        originalWidth: 200
         }
       ],
       startPrice: 20000,
@@ -39,7 +46,23 @@ function App() {
       type: "Đùi bò",
       color: "Đỏ",
       size: "XL",
-      image: [image2],
+      image: [
+        {
+        original: image1,
+        originalHeight: 200,
+        originalWidth: 200
+        }, 
+        {
+        original: image2,
+        originalHeight: 200,
+        originalWidth: 200
+        }, 
+        {
+        original: image6,
+        originalHeight: 200,
+        originalWidth: 200
+        }
+      ],
       startPrice: 25000,
       currentPrice: 2800,
       photoUrls: [],
@@ -50,7 +73,23 @@ function App() {
       type: "Skinny",
       color: "Đen",
       size: "L",
-      image: [image3],
+      image: [
+        {
+        original: image3,
+        originalHeight: 200,
+        originalWidth: 200
+        }, 
+        {
+        original: image5,
+        originalHeight: 200,
+        originalWidth: 200
+        }, 
+        {
+        original: image7,
+        originalHeight: 200,
+        originalWidth: 200
+        }
+      ],
       startPrice: 30000,
       currentPrice: 33000,
       photoUrls: [],
@@ -61,7 +100,23 @@ function App() {
       type: "Đùi bò",
       color: "Đỏ",
       size: "XL",
-      image: [image4],
+      image: [
+        {
+        original: image2,
+        originalHeight: 200,
+        originalWidth: 200
+        }, 
+        {
+        original: image4,
+        originalHeight: 200,
+        originalWidth: 200
+        }, 
+        {
+        original: image6,
+        originalHeight: 200,
+        originalWidth: 200
+        }
+      ],
       startPrice: 20800,
       currentPrice: 21000,
       photoUrls: [],
