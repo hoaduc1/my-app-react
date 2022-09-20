@@ -1,7 +1,7 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
 .title-item {
-    color: rgb(14, 14, 186);
+    /* color: rgb(14, 14, 186); */
 }
 
 .item {
@@ -11,7 +11,7 @@
 }
 
 .title {
-  background-color: hsl(0, 0%, 100%);
+  /* background-color: hsl(0, 0%, 100%);
   min-height: 0vh;
   display: flex;
   flex-direction: column;
@@ -20,18 +20,22 @@
   font-size: calc(10px + 2vmin);
   color: rgb(0, 0, 0);
   word-spacing: 0mm;
-  block-size: 0vh;
+  block-size: 0vh; */
 }
 
 .div-0 {
+    
     /* height: 100%;
     width: 100%; */
-    /* background-color: powderblue; */
+    /* display: flex; */
+    background-color: rgb(243, 220, 157);
 }
 
 .div-1 {
     /* display: flex; */
     /* text-align: left; */
+    align-items: center;
+    background-color: rgb(243, 224, 171);
     
 }
 
@@ -43,15 +47,19 @@
 }
 
 .div-3 {
-    word-spacing: 0mm;
+    /* word-spacing: 0mm; */
+    /* height: 200px;
+    width: 400px; */
+    background-color: rgb(95, 94, 92);
 }
 
 .div-4 {
-    display: inline-flex;
+    /* display: inline-flex; */
+    background-color: rgb(179, 176, 170);
     
 }
 
 .photo {
-    height: 500px;
-    width: 500px;
+    /* height: 500px;
+    width: 500px; */
 }

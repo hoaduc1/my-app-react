@@ -1,3 +1,4 @@
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 import logo from './logo.svg';
 import './App.css';
 import ProductShow from "./components/productShow"; //Import component
@@ -142,17 +143,17 @@ function App() {
       <div className=''>
         {
           testData.map((item, index) => {
-            return <ProductShow 
-                    name={item.name}
-                    type={item.type} 
-                    color={item.color} 
-                    size={item.size} 
-                    image={item.image}
-                    startPrice={item.startPrice}
-                    currentPrice={item.currentPrice}
-                    description={item.description}
-                    createdUserName={item.createdUserName}> {item.name}
-                    </ProductShow>
+              return  <ProductShow 
+                      name={item.name}
+                      type={item.type} 
+                      color={item.color} 
+                      size={item.size} 
+                      image={item.image}
+                      startPrice={item.startPrice}
+                      currentPrice={item.currentPrice}
+                      description={item.description}
+                      createdUserName={item.createdUserName}> {item.name}
+                      </ProductShow>
           })
         }
       </div>
